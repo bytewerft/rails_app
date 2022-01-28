@@ -25,5 +25,5 @@ production:
   encoding: unicode
   database: rails_app
   pool: 5
-  username: rails
+  username: rails_app
   password: insecure
