@@ -1,16 +1,14 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.16.0"
 
-set :git_http_username, "ortvin"
-set :git_http_password, "ostern"
 set :application, "rails_app"
-set :repo_url, "http://gogs:6000/bytewerft/radio-archiv.git"
+set :repo_url, "git@github.com:bytewerft/rails_app.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+# set :deploy_to, "/var/www/m_yapp_name"
 
 # Deploy to the user's home directory
 set :deploy_to, "/home/vagrant/#{fetch :application}"
