@@ -11,7 +11,7 @@ set :repo_url, "git@github.com:bytewerft/rails_app.git"
 # set :deploy_to, "/var/www/m_yapp_name"
 
 # Deploy to the user's home directory
-set :deploy_to, "/home/vagrant/#{fetch :application}"
+set :deploy_to, "/home/deploy/#{fetch :application}"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
