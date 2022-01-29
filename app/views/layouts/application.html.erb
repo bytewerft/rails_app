@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <% unless Rails.env.production? %>
+      <%= Rails.env %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
