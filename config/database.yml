@@ -20,7 +20,7 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
+production: &production
   adapter: postgresql
   encoding: unicode
   database: rails_app
