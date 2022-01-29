@@ -12,7 +12,9 @@
 
   <body>
     <% unless Rails.env.production? %>
-      <%= Rails.env %>
+      <div class="badge rotated">
+        <%= Rails.env %>
+      </div>
     <% end %>
     <%= yield %>
   </body>
